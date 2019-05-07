@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="author" content="Roman Zubko">
+	<meta property="og:image" content="./img/freedom_bird_logo(500w)+bg.png">
+    <meta property="og:description" content="This is a responsive landing page created using the mobile first approach. The main technologies that have been used - html5 markup, html5 video, css grid, media queries, form.">
+    <meta property="og:title" content="Web Solutions - Responsive HTML5 Landing Page">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Solutions - Responsive HTML5 Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body> 
+    <!-- Header Showcase -->
+    <header id="showcase" class="grid">
+        <div class="bg-video">
+            <video autoplay muted loop playsinline>
+                <source src="./video/video_2019-04-24_13-26-39.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="content-wrap">
+            <h1>Welcome to Professional Web Solutions</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit cupiditate modi rem ullam consequuntur dolore libero saepe, provident unde.</p>
+            <a href="#section-a" class="btn">Read More</a>
+        </div>
+    </header>
+    <!-- Main area -->
+    <main id="main">
+        <!-- Section A -->
+        <section id="section-a" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Web & Application Development</h2>
+                <div class="content-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reprehenderit dolores ipsam necessitatibus harum pariatur similique voluptatum hic libero, molestiae laboriosam, cupiditate vitae deserunt aspernatur nemo? Dolorum, accusamus, necessitatibus sapiente iusto cum eos assumenda nisi nemo repellat laudantium vel placeat.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section B -->
+        <section id="section-b" class="grid">
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="./img/pexels-photo-574077.jpeg" alt="">
+                        <div class="card-content">
+                            <h3 class="card-title">Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+                        </div>
+                    </div> 
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="./img/pexels-photo-261628.jpeg" alt="">
+                        <div class="card-content">
+                        <h3 class="card-title">Mobile Applications</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="./img/pexels-photo-265087.jpeg" alt="">
+                        <div class="card-content">
+                        <h3 class="card-title">Tech Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section C -->
+
+        <section id="section-c" class="grid">
+          <h2 class="section-title">a few words about us</h2>
+          <ul>
+            <li>
+              <div class="card">
+                <img src="./img/icons8-female-user.svg" alt="" class="icon-about">
+                <div class="card-content">
+                  <h3 class="card-title">Aubrey Rowland</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, dicta ad? Deserunt inventore accusamus cupiditate, earum ducimus veniam enim nisi.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img src="./img/icons8-female-user.svg" alt="" class="icon-about">
+                <div class="card-content">
+                  <h3 class="card-title">Amiah Burton</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, dicta ad? Deserunt inventore accusamus cupiditate, earum ducimus veniam enim nisi.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img src="./img/icons8-female-user.svg" alt="" class="icon-about">
+                <div class="card-content">
+                  <h3 class="card-title">Kamren Huffman</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, dicta ad? Deserunt inventore accusamus cupiditate, earum ducimus veniam enim nisi.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img src="./img/icons8-female-user.svg" alt="" class="icon-about">
+                <div class="card-content">
+                  <h3 class="card-title">Yair Lamb</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, dicta ad? Deserunt inventore accusamus cupiditate, earum ducimus veniam enim nisi.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Section D -->
+        <section id="section-d" class="grid">
+            <h2 class="section-title">contact us</h2>
+            <div class="content-wrap">
+              <form name="contact" method="POST" data-netlify="true">
+                <div class="head-contact-form form-container">
+                  <input type="text" name="user_name" id="name" placeholder="Name:" required>
+                  <input type="email" name="user_email" id="email" placeholder="Email:" required>
+                </div>
+                <div class="body-contact-form form-container">
+                  <textarea name="user_message" id="message" cols="30" rows="10" placeholder="Message:" required></textarea>                  
+                </div>
+                <button class="send-btn" type="submit">SEND MESSAGE</button>
+              </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div><a href="https://www.linkedin.com/in/roman-zubko-93aa20112/" target="_blank">Roman Zubko</a> © 2019 All Rights Reserved</div>
+    </footer>
+</body>
+</html>

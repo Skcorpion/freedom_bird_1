@@ -1,0 +1,311 @@
+
+/* Core Styles */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #383b53;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 1em 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #383b53;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: 0.5em 0;
+}
+
+.btn:hover {
+    background: #eaeaea;
+    color: #333;
+}
+
+/* Header Showcase */ 
+
+#showcase {
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.bg-video video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #383b53;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#showcase h1 {
+    padding-top: 20vh;
+    padding-bottom: 0.5em;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+    padding: 0 1.5em;
+}
+
+
+
+/* Section A */
+#section-a {
+    background: #fff;
+    color: #333;
+    padding-bottom: 2em;
+  }
+
+/* Section B */
+
+#section-b {
+    padding: 1em;
+}
+
+#section-b ul,
+#section-c ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-b li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+}
+
+.card-content {
+    padding: 1.5em;
+}
+
+/* Section C */
+
+#section-c {
+  background: #b1ddf1;
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+#section-c .card {
+  border-top: 2px dashed #383b53;
+}
+
+#section-c .section-title {
+  padding-bottom: 1em;
+  text-transform: capitalize;
+}
+
+#section-c h3.card-title {
+  font-weight: 500;
+  padding: 0;
+}
+
+#section-c p {
+  padding-top: 0;
+}
+
+#section-c img.icon-about {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  padding-top: 0.75em;
+}
+
+#section-c .card-content {
+  padding: 0 5em 0.75em;
+}
+
+/* Section D */
+#section-d .section-title {
+  padding-bottom: 0.5em;
+  text-transform: capitalize;
+}
+
+.form-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+input, textarea, .send-btn {
+  display: block;
+  margin: 1.2em auto;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  padding: 11px 8px;
+  
+}
+
+input, textarea {
+  border: 4px solid #b1ddf1;
+}
+
+input {
+  height: 48px;
+}
+
+.send-btn {
+  width: 250px;
+  height: 45px;
+  padding: 6px 18px;
+  font-size: 1.2em;
+  color: #383b53;
+  background: #b1ddf1;
+  border: 1px solid #333;
+}
+
+.send-btn:hover {
+  background: #76c4e7;
+}
+
+
+/* Footer */
+
+#main-footer {
+  padding: 1em;
+  background: #282b41;
+  color: #fff;
+}
+
+#main-footer a {
+  text-decoration: none;
+  outline: none;
+  color: #b1ddf1;
+}
+
+#main-footer a:hover,
+#main-footer a:focus {
+  border-bottom: 2px solid;
+}
+
+/* Media Queries */
+@media (max-width: 641px) and (max-height: 360px) {
+  #showcase a {
+    display: none;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 360px) {
+  #showcase h1 {
+    padding-top: 15vh;
+  }
+}
+
+@media (min-width: 700px) {
+
+  #showcase h1 {
+    padding-top: 35vh;
+  }
+
+  #section-a .content-text {
+    columns: 2;
+    column-gap: 2em;
+    text-align: left;
+  }
+
+  #section-a .content-text p {
+    padding-top: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 27rem)) 1fr;
+  }
+
+  .content-wrap,
+  #section-b ul,
+  #section-c ul,
+  .section-title {
+    grid-column: 2/4;
+   
+  }
+
+  #section-b ul
+   {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-c ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+
+  .icon-about {
+    float: left;
+    padding: 0.75em 1em 0 0;
+  }
+
+  #section-c .card {
+    margin-left: 2em;
+  }
+  #section-c .card-content {
+    padding: 0.75em 1.5em 0.75em 0;
+    text-align: left;
+  }
+
+  /* form grid */
+  form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .send-btn {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0 5% 1.2em auto;
+  }
+
+}
